@@ -1,0 +1,62 @@
+// Variable overrides first
+$theme-colors: (
+  "primary": #1a6baf,
+  "secondary": #e7e5e5,
+  "success": #157015,
+  "danger": #880f0a,
+  "warning": #e18202,
+  "info": #0dcaf0,
+  "light": #f8f9fa,
+  "dark": #212529,
+);
+
+$primary: #1a6baf;
+$primary-gradient: linear-gradient(91.76deg, #1669ad 1.49%, #4484ba 98.58%);
+$primary-gradient-v-1: linear-gradient(
+  91deg,
+  rgba(68, 132, 186, 1) 0%,
+  rgba(22, 105, 173, 1) 100%
+);
+$primary-variant-1: #1d79c3;
+$primary-variant-2: #114978;
+$primary-variant-3: #115186;
+$primary-variant-4: #2086d9;
+$light-blue: #dde9f3;
+$secondary-variant-1: #dad7d7;
+$text-dark: #444444;
+$text-dark-varinat-1: #878787;
+$text-grey: #aaaaaa;
+$grey-variant-1: #c4c4c4;
+$grey-variant-2: #999;
+$grey-variant-3: #c4c2c2;
+$grey-variant-4: #8f8c8c;
+$grey-variant-5: #cac8c8;
+$grey-variant-6: #8d9dab;
+$light-variant-1: #f4f7fa;
+$light-variant-2: #e8e7e7;
+$danger: #f13838;
+$alert-success: #44e544;
+$alert-danger: #d93933;
+$alert-warning: #fb9f25;
+$white-variant-1: #f5f5f5;
+
+:root {
+  --sidebar-width: 260px;
+}
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 1024px,
+//   xl: 1200px,
+//   xxl: 1440px,
+// );
+
+// $container-max-widths: (
+//   sm: 576px,
+//   md: 768px,
+//   lg: 1024px,
+//   xl: 1200px,
+//   xxl: 1440px,
+// );

@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Meta descriptions may be included in search results to concisely summarize page content." />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="overlay" id="overlay"></div>
+    <!-- Start Navbar -->
+    <div class="sidebar">
+      <a href="#" title="Logo" class="logo" data-aos="fade-in" data-aos-delay="100">
+        <img src="assets/img/logo.svg" alt="Logo" />
+      </a>
+      <ul>
+        <li data-aos="fade-right" data-aos-delay="200">
+          <a href="dashboard.html" title="Dashboard" class="active">
+            <img src="assets/img/dashboard-default-ic.svg" alt="Dashboard" />
+            <img src="assets/img/dashboard-active-ic.svg" alt="Dashboard" />
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="300">
+          <a href="inner.html" title="Innerpage">
+            <img src="assets/img/innerpage-default-ic.svg" alt="Innerpage" />
+            <img src="assets/img/innerpage-active-ic.svg" alt="Innerpage" />
+            <span>Innerpage</span>
+          </a>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="400">
+          <a href="#" title="Tasks">
+            <img src="assets/img/task-default-ic.svg" alt="Tasks" />
+            <img src="assets/img/task-active-ic.svg" alt="Tasks" />
+            <span>Tasks</span>
+          </a>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="500">
+          <a href="#" title="Setting">
+            <img src="assets/img/setting-default-ic.svg" alt="Setting" />
+            <img src="assets/img/setting-active-ic.svg" alt="Setting" />
+            <span>Setting</span>
+          </a>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="600">
+          <a href="#" title="Report">
+            <img src="assets/img/report-default-ic.svg" alt="Report" />
+            <img src="assets/img/report-active-ic.svg" alt="Report" />
+            <span>Report</span>
+          </a>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="700">
+          <a href="#" title="Chart">
+            <img src="assets/img/chart-default-ic.svg" alt="Chart" />
+            <img src="assets/img/chart-active-ic.svg" alt="Chart" />
+            <span>Chart</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Navbar -->
+    <main class="main">
+      <!-- Start Header -->
+      <nav class="header">
+        <div class="overlay-search" id="overlay-search"></div>
+        <button class="btn btn-primary nav-toggler d-lg-none" type="button" id="nav-toggler">
+          <img src="./assets/img/menu-white-ic.svg" alt="Menu" />
+        </button>
+        <div class="logo-block d-lg-none">
+          <a href="#" class="logo" title="Logo"><img src="./assets/img/mobile-logo.svg" alt="Logo" /></a>
+        </div>
+        <form class="form-wrapper" role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-primary" type="button">
+            <img src="assets/img/search-ic.svg" alt="Search" />
+          </button>
+        </form>
+        <ul class="navbar-nav ms-auto ms-md-0 ms-lg-auto">
+          <li class="nav-item dropdown icon-dropdown d-md-none">
+            <a class="nav-link icon-btn dropdown-toggle" href="#" role="button" id="search-toggler">
+              <img src="assets/img/search-ic-primary.svg" alt="Search" />
+            </a>
+          </li>
+          <li class="nav-item dropdown icon-dropdown notification-dropdown">
+            <a class="nav-link icon-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 22C12.6193 22.0008 13.2235 21.8086 13.7285 21.4502C14.2335 21.0917 14.6143 20.5849 14.818 20H9.182C9.38566 20.5849 9.76648 21.0917 10.2715 21.4502C10.7765 21.8086 11.3807 22.0008 12 22ZM19 14.586V10C19 6.783 16.815 4.073 13.855 3.258C13.562 2.52 12.846 2 12 2C11.154 2 10.438 2.52 10.145 3.258C7.185 4.074 5 6.783 5 10V14.586L3.293 16.293C3.19996 16.3857 3.12617 16.4959 3.07589 16.6172C3.0256 16.7386 2.99981 16.8687 3 17V18C3 18.2652 3.10536 18.5196 3.29289 18.7071C3.48043 18.8946 3.73478 19 4 19H20C20.2652 19 20.5196 18.8946 20.7071 18.7071C20.8946 18.5196 21 18.2652 21 18V17C21.0002 16.8687 20.9744 16.7386 20.9241 16.6172C20.8738 16.4959 20.8 16.3857 20.707 16.293L19 14.586Z" />
+              </svg>
+              <span>2</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>Notifications</li>
+              <li>
+                <ul>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon"><img src="assets/img/alert-ic.svg" alt="Alert" /></span>
+                      <div class="content">
+                        <p>Lorem Ipsum Dummy Text</p>
+                        <span>1m ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon"><img src="assets/img/alert-ic.svg" alt="Alert" /></span>
+                      <div class="content">
+                        <p>Lorem Ipsum Dummy Text</p>
+                        <span>1s ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon"><img src="assets/img/alert-ic.svg" alt="Alert" /></span>
+                      <div class="content">
+                        <p>Lorem Ipsum Dummy Text</p>
+                        <span>1hr ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon"><img src="assets/img/alert-ic.svg" alt="Alert" /></span>
+                      <div class="content">
+                        <p>Lorem Ipsum Dummy Text</p>
+                        <span>1m 20s ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon"><img src="assets/img/alert-ic.svg" alt="Alert" /></span>
+                      <div class="content">
+                        <p>Lorem Ipsum Dummy Text</p>
+                        <span>1hr 20m 20s ago</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">View All
+                  <img src="assets/img/arrow-down-ic.svg" alt="Arrow Down" /></a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown icon-dropdown msg-dropdown">
+            <a class="nav-link icon-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 2H4C2.897 2 2 2.894 2 3.992V16.008C2 17.106 2.897 18 4 18H7V22L13.351 18H20C21.103 18 22 17.106 22 16.008V3.992C21.9984 3.46279 21.7869 2.95583 21.412 2.58237C21.037 2.20891 20.5292 1.99947 20 2Z" />
+              </svg>
+
+              <span>2</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>Messages</li>
+              <li>
+                <ul>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon"><img src="assets/img/user-img.png" alt="User Pic" /></span>
+                      <div class="chat-content">
+                        <div class="name-block">
+                          <p>John Doe</p>
+                          <span>08:01 PM</span>
+                        </div>
+                        <span>Hi, How are you.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon"><img src="assets/img/user-img.png" alt="User Pic" /></span>
+                      <div class="chat-content">
+                        <div class="name-block">
+                          <p>John Doe</p>
+                          <span>08:01 PM</span>
+                        </div>
+                        <span>Hi, How are you. What are you doing</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon"><img src="assets/img/user-img.png" alt="User Pic" /></span>
+                      <div class="chat-content">
+                        <div class="name-block">
+                          <p>John Doe</p>
+                          <span>08:01 PM</span>
+                        </div>
+                        <span>Hi, How are you.o</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon"><img src="assets/img/user-img.png" alt="User Pic" /></span>
+                      <div class="chat-content">
+                        <div class="name-block">
+                          <p>John Doe</p>
+                          <span>08:01 PM</span>
+                        </div>
+                        <span>Hi, How are you. What are you doing</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon"><img src="assets/img/user-img.png" alt="User Pic" /></span>
+                      <div class="chat-content">
+                        <div class="name-block">
+                          <p>John Doe</p>
+                          <span>08:01 PM</span>
+                        </div>
+                        <span>Hi, How are you.m 20s ago</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">View All
+                  <img src="assets/img/arrow-down-ic.svg" alt="Arrow Down" /></a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown profile-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/img/user-profile.png" alt="User" />
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end profile-dropdown-menu primary-dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="login.html">
+                  <img src="assets/img/logout.svg" alt="Logout" />
+                  <span>Logout</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- End Header -->
+
+      <!-- Main Content -->
+      <section class="main-content">
+        <div class="row primary-row section-row" data-module="countup">
+          <!-- Mini Cards Start -->
+          <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card mini-cards">
+              <div class="header-with-icon">
+                <span class="icon-wrapper">
+                  <img src="./assets/img/profit-ic.svg" alt="Profit" />
+                </span>
+                <h3 class="card-title">Profit</h3>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./assets/img/three-dots-ic.svg" alt="Icon" />
+                  </button>
+                  <ul class="dropdown-menu profile-dropdown-menu primary-dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="number">
+                  <span class="stat-suffix">$</span>
+                  <span class="stat-number" data-countup-number="29000">29,000</span>
+                </h2>
+                <p>Jan 28, 2021</p>
+              </div>
+              <div class="elips">
+                <span class="one"></span>
+                <span class="two"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card mini-cards">
+              <div class="header-with-icon">
+                <span class="icon-wrapper">
+                  <img src="./assets/img/payment-ic.svg" alt="Profit" />
+                </span>
+                <h3 class="card-title">Payment</h3>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./assets/img/three-dots-ic.svg" alt="Icon" />
+                  </button>
+                  <ul class="dropdown-menu primary-dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="number">
+                  <span class="stat-suffix">$</span>
+                  <span class="stat-number" data-countup-number="39500">39,500</span>
+                </h2>
+                <p>Jan 28, 2021</p>
+              </div>
+              <div class="elips">
+                <span class="one"></span>
+                <span class="two"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card mini-cards">
+              <div class="header-with-icon">
+                <span class="icon-wrapper">
+                  <img src="./assets/img/orders-ic.svg" alt="Profit" />
+                </span>
+                <h3 class="card-title">Orders</h3>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./assets/img/three-dots-ic.svg" alt="Icon" />
+                  </button>
+                  <ul class="dropdown-menu primary-dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="number">
+                  <span class="stat-suffix">$</span>
+                  <span class="stat-number" data-countup-number="29800">29,800</span>
+                </h2>
+                <p>Jan 28, 2021</p>
+              </div>
+              <div class="elips">
+                <span class="one"></span>
+                <span class="two"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="card mini-cards">
+              <div class="header-with-icon">
+                <span class="icon-wrapper">
+                  <img src="./assets/img/mail-ic.svg" alt="Profit" />
+                </span>
+                <h3 class="card-title">Mails</h3>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./assets/img/three-dots-ic.svg" alt="Icon" />
+                  </button>
+                  <ul class="dropdown-menu primary-dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="number">
+                  <span class="stat-suffix">$</span>
+                  <span class="stat-number" data-countup-number="49800">49,800</span>
+                </h2>
+                <p>Dec 28, 2021</p>
+              </div>
+              <div class="elips">
+                <span class="one"></span>
+                <span class="two"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mini Cards End -->
+        <div class="row primary-row">
+          <!-- Statistics chart Start -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card primary-card graph-card">
+              <div class="card-header">
+                <h4>Statistics</h4>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./assets/img/three-dots-ic.svg" alt="Icon" />
+                  </button>
+                  <ul class="dropdown-menu primary-dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="chart-container">
+                  <canvas id="mainChart" aria-label="chart" role="img" height="200"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Statistics chart End -->
+          <!-- Chat card Start -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="card primary-card chat-card">
+              <div class="card-header">
+                <h4>Chats</h4>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./assets/img/three-dots-ic.svg" alt="Icon" />
+                  </button>
+                  <ul class="dropdown-menu primary-dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="chat-wrapper">
+                  <div class="message-block from-receiver">
+                    <img src="./assets/img/user2.png" alt="User" class="user-profile" />
+                    <div class="chat-block">
+                      <span class="message">
+                        Lorem ipsum dolor sit amet
+                      </span>
+                      <span class="date">Dec 12, 2021</span>
+                    </div>
+                  </div>
+                  <div class="message-block from-sender">
+                    <img src="./assets/img/user3.png" alt="User" class="user-profile" />
+                    <div class="chat-block">
+                      <span class="message">
+                        Lorem ipsum dolor sit amet
+                      </span>
+                      <span class="date">Dec 12, 2021</span>
+                    </div>
+                  </div>
+                  <div class="message-block from-receiver">
+                    <img src="./assets/img/user4.png" alt="User" class="user-profile" />
+                    <div class="chat-block">
+                      <span class="message">
+                        Lorem ipsum dolor sit amet
+                      </span>
+                      <span class="date">Dec 12, 2021</span>
+                    </div>
+                  </div>
+                  <div class="message-block from-sender">
+                    <img src="./assets/img/user5.png" alt="User" class="user-profile" />
+                    <div class="chat-block">
+                      <span class="message">
+                        Lorem ipsum dolor sit amet
+                      </span>
+                      <span class="date">Dec 12, 2021</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Chat card End -->
+          <!-- CTA navigatio Start -->
+          <div class="col-xl-auto col-12" data-aos="fade-up" data-aos-delay="400">
+            <div class="custom-row">
+              <div class="custom-col-6">
+                <a href="#" class="op-fade" title="Item Orders">
+                  <img src="./assets/img/innerpage-default-ic.svg" alt="Order" />
+                  <span>Item Orders</span>
+                </a>
+              </div>
+              <div class="custom-col-6">
+                <a href="#" title="Bug Reports">
+                  <img src="./assets/img/bug-report-ic.svg" alt="Order" />
+                  <span>Bug Reports</span>
+                </a>
+              </div>
+              <div class="custom-col-6 order-md-3 order-xl-2">
+                <a href="#" title="Weekly Sales">
+                  <img src="./assets/img/chart-default-ic.svg" alt="Order" />
+                  <span>Weekly Sales</span>
+                </a>
+              </div>
+              <div class="custom-col-6 order-md-2">
+                <a href="#" class="op-fade" title="New Users">
+                  <img src="./assets/img/add-user-ic.svg" alt="Order" />
+                  <span>New Users</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CTA navigatio End -->
+          <!-- Daily Sale Start -->
+          <div class="col" data-aos="fade-up" data-aos-delay="600">
+            <div class="card primary-card sale-card">
+              <div class="daily-sale">
+                <div class="card-header">
+                  <h4>Daily Sales</h4>
+                </div>
+                <div class="circular-progress-outer">
+                  <div class="progress-1"></div>
+                </div>
+              </div>
+              <div class="other-sale">
+                <div class="card-header">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./assets/img/three-dots-ic.svg" alt="Icon" />
+                    </button>
+                    <ul class="dropdown-menu primary-dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Action 1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span class="img-wrap">
+                        <img src="./assets/img/li-most-sale.svg" alt="sale-icon" />
+                      </span>
+                      <span>
+                        <span class="sale-title">Most Sales</span>
+                        <span class="sale-info">Author with the baste sales</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="img-wrap">
+                        <img src="./assets/img/li-total-sale.svg" alt="sale-icon" />
+                      </span>
+                      <span>
+                        <span class="sale-title">Total Sales</span>
+                        <span class="sale-info">Author’s Total sales</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="img-wrap">
+                        <img src="./assets/img/li-avg-sale.svg" alt="sale-icon" />
+                      </span>
+                      <span>
+                        <span class="sale-title">Avarage Sales</span>
+                        <span class="sale-info">Author with the avarage sales</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="img-wrap">
+                        <img src="./assets/img/li-most-sale-2.svg" alt="sale-icon" />
+                      </span>
+                      <span>
+                        <span class="sale-title">Most Sales</span>
+                        <span class="sale-info">Author with the baste sales</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Daily Sale End -->
+          <!-- Table Start -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+            <div class="card primary-card table-card">
+              <div class="card-header">
+                <h4>Users</h4>
+                <div class="dropdown with-text">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filter
+                    <img src="./assets/img/ic-dropdown.svg" alt="Icon" />
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end primary-dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="table-outer">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Record Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">DOB</th>
+                        <th scope="col">Mobile No.</th>
+                        <th scope="col">Email</th>
+                        <th scope="col" class="text-end">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="user-id">
+                            <img src="./assets/img/user2.png" alt="User" />
+                            <span>ET0001</span>
+                          </div>
+                        </td>
+                        <td>Darlene</td>
+                        <td>5/19/12</td>
+                        <td>(270) 555-0117</td>
+                        <td>tim@example.com</td>
+                        <td>
+                          <div class="table-action">
+                            <a href="#" title="Edit" role="button" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              <img src="./assets/img/ic-edit.svg" alt="Edit" />
+                            </a>
+                            <a href="#" title="Delete">
+                              <img src="./assets/img/ic-delete.svg" alt="Delete" />
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="user-id">
+                            <img src="./assets/img/user3.png" alt="User" />
+                            <span>ET0002</span>
+                          </div>
+                        </td>
+                        <td>Theresa</td>
+                        <td>2/11/12</td>
+                        <td>(629) 555-0129</td>
+                        <td>jessica@example.com</td>
+                        <td>
+                          <div class="table-action">
+                            <a href="#" title="Edit" role="button" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              <img src="./assets/img/ic-edit.svg" alt="Edit" />
+                            </a>
+                            <a href="#" title="Delete">
+                              <img src="./assets/img/ic-delete.svg" alt="Delete" />
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="user-id">
+                            <img src="./assets/img/user4.png" alt="User" />
+                            <span>ET0003</span>
+                          </div>
+                        </td>
+                        <td>Marvin</td>
+                        <td>7/18/17</td>
+                        <td>(684) 555-0102</td>
+                        <td>sara@example.com</td>
+                        <td>
+                          <div class="table-action">
+                            <a href="#" title="Edit" role="button" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              <img src="./assets/img/ic-edit.svg" alt="Edit" />
+                            </a>
+                            <a href="#" title="Delete">
+                              <img src="./assets/img/ic-delete.svg" alt="Delete" />
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="user-id">
+                            <img src="./assets/img/user5.png" alt="User" />
+                            <span>ET0004</span>
+                          </div>
+                        </td>
+                        <td>Bessie</td>
+                        <td>12/4/17</td>
+                        <td>(208) 555-0112</td>
+                        <td>willie@example.com</td>
+                        <td>
+                          <div class="table-action">
+                            <a href="#" title="Edit" role="button" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              <img src="./assets/img/ic-edit.svg" alt="Edit" />
+                            </a>
+                            <a href="#" title="Delete">
+                              <img src="./assets/img/ic-delete.svg" alt="Delete" />
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="user-id">
+                            <img src="./assets/img/user6.png" alt="User" />
+                            <span>ET0005</span>
+                          </div>
+                        </td>
+                        <td>Cody</td>
+                        <td>6/21/19</td>
+                        <td>(907) 555-0101</td>
+                        <td>michelle@example.com</td>
+                        <td>
+                          <div class="table-action">
+                            <a href="#" title="Edit" role="button" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              <img src="./assets/img/ic-edit.svg" alt="Edit" />
+                            </a>
+                            <a href="#" title="Delete">
+                              <img src="./assets/img/ic-delete.svg" alt="Delete" />
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- Pagination Start -->
+                <nav>
+                  <div class="record-select-wrapper">
+                    <p>No of Records :</p>
+                    <div class="form-floating">
+                      <select class="form-select">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                      </select>
+                    </div>
+                  </div>
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true"><img src="./assets/img/ic-pagination-prev.svg" alt="Icon" /></span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link active" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true"><img src="./assets/img/ic-pagination-next.svg" alt="Icon" /></span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- Pagination End -->
+              </div>
+            </div>
+          </div>
+          <!-- Table End -->
+        </div>
+      </section>
+      <!-- End Main Content -->
+
+      <!-- Modal Start-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Form</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="name" placeholder="Name" />
+                    <label for="name">Name</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="Email" />
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <select class="form-select">
+                      <option value="1">10</option>
+                      <option value="2">20</option>
+                      <option value="3">30</option>
+                    </select>
+                    <label for="name">Dropdown</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <select class="form-select">
+                      <option value="1">10</option>
+                      <option value="2">20</option>
+                      <option value="3">30</option>
+                    </select>
+                    <label for="name">Dropdown</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="radio-outer">
+                    <p>Gender</p>
+                    <div class="radio-grp">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" />
+                        <label class="form-check-label" for="male">Male</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" checked value="female" />
+                        <label class="form-check-label" for="female">Female</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save</button>
+              <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal"><span>Close</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal End-->
+    </main>
+  </div>
+
+  <!-- JavaScripts -->
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    var bar = new ProgressBar.Circle(".progress-1", {
+      strokeWidth: 9,
+      easing: 'easeInOut',
+      duration: 1400,
+      color: '#1A6BAF',
+      trailColor: '#FFFFFF',
+      trailWidth: 1,
+      svgStyle: null,
+      text: {
+        value: '',
+        alignToBottom: false
+      },
+      from: { color: '#1A6BAF' },
+      to: { color: '#1A6BAF ' },
+      step: (state, bar) => {
+        bar.path.setAttribute('stroke', state.color);
+        var value = Math.round(bar.value() * 100);
+        if (value === 0) {
+          bar.setText('');
+        } else {
+          bar.setText(value + '%');
+        }
+        bar.text.style.color = state.color;
+      }
+    });
+
+    // On Load Page Visible
+    window.addEventListener("DOMContentLoaded", function () {
+      function circularProgress() {
+        bar.animate(0.8); // Number from 0.0 to 1.0
+      }
+
+      // Progress Animation
+      gsap.registerPlugin(ScrollTrigger);
+      const anim1 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".sale-card",
+          start: "top 70%",
+          end: "+=500",
+          onEnter: circularProgress,
+        },
+      });
+    });
+
+
+  </script>
+</body>
+
+</html>
